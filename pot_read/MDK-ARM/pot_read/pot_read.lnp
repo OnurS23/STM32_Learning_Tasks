@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"pot_read\startup_stm32f103xb.o"
+"pot_read\main.o"
+"pot_read\stm32f1xx_it.o"
+"pot_read\stm32f1xx_hal_msp.o"
+"pot_read\stm32f1xx_hal_gpio_ex.o"
+"pot_read\stm32f1xx_hal_adc.o"
+"pot_read\stm32f1xx_hal_adc_ex.o"
+"pot_read\stm32f1xx_hal.o"
+"pot_read\stm32f1xx_hal_rcc.o"
+"pot_read\stm32f1xx_hal_rcc_ex.o"
+"pot_read\stm32f1xx_hal_gpio.o"
+"pot_read\stm32f1xx_hal_dma.o"
+"pot_read\stm32f1xx_hal_cortex.o"
+"pot_read\stm32f1xx_hal_pwr.o"
+"pot_read\stm32f1xx_hal_flash.o"
+"pot_read\stm32f1xx_hal_flash_ex.o"
+"pot_read\stm32f1xx_hal_exti.o"
+"pot_read\stm32f1xx_hal_tim.o"
+"pot_read\stm32f1xx_hal_tim_ex.o"
+"pot_read\system_stm32f1xx.o"
+--strict --scatter "pot_read\pot_read.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pot_read.map" -o pot_read\pot_read.axf

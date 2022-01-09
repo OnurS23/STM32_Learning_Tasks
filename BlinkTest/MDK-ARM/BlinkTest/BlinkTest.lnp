@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"blinktest\startup_stm32f103xb.o"
+"blinktest\main.o"
+"blinktest\stm32f1xx_it.o"
+"blinktest\stm32f1xx_hal_msp.o"
+"blinktest\stm32f1xx_hal_gpio_ex.o"
+"blinktest\stm32f1xx_hal_tim.o"
+"blinktest\stm32f1xx_hal_tim_ex.o"
+"blinktest\stm32f1xx_hal.o"
+"blinktest\stm32f1xx_hal_rcc.o"
+"blinktest\stm32f1xx_hal_rcc_ex.o"
+"blinktest\stm32f1xx_hal_gpio.o"
+"blinktest\stm32f1xx_hal_dma.o"
+"blinktest\stm32f1xx_hal_cortex.o"
+"blinktest\stm32f1xx_hal_pwr.o"
+"blinktest\stm32f1xx_hal_flash.o"
+"blinktest\stm32f1xx_hal_flash_ex.o"
+"blinktest\stm32f1xx_hal_exti.o"
+"blinktest\system_stm32f1xx.o"
+--strict --scatter "BlinkTest\BlinkTest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BlinkTest.map" -o BlinkTest\BlinkTest.axf

@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"timerblink\startup_stm32f103xb.o"
+"timerblink\main.o"
+"timerblink\stm32f1xx_it.o"
+"timerblink\stm32f1xx_hal_msp.o"
+"timerblink\stm32f1xx_hal_gpio_ex.o"
+"timerblink\stm32f1xx_hal_tim.o"
+"timerblink\stm32f1xx_hal_tim_ex.o"
+"timerblink\stm32f1xx_hal.o"
+"timerblink\stm32f1xx_hal_rcc.o"
+"timerblink\stm32f1xx_hal_rcc_ex.o"
+"timerblink\stm32f1xx_hal_gpio.o"
+"timerblink\stm32f1xx_hal_dma.o"
+"timerblink\stm32f1xx_hal_cortex.o"
+"timerblink\stm32f1xx_hal_pwr.o"
+"timerblink\stm32f1xx_hal_flash.o"
+"timerblink\stm32f1xx_hal_flash_ex.o"
+"timerblink\stm32f1xx_hal_exti.o"
+"timerblink\system_stm32f1xx.o"
+--strict --scatter "TimerBlink\TimerBlink.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TimerBlink.map" -o TimerBlink\TimerBlink.axf
